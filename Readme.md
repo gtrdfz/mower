@@ -1,4 +1,4 @@
-Auteur : Gautier Defossez
+Auteur : gd
 
 
 #### Input
