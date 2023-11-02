@@ -32,7 +32,8 @@ public class LawnMower {
         int ordinal = (mowerState.direction().ordinal() + move) % directionsValues.length;
         ordinal = ordinal < 0 ? directionsValues.length + ordinal : ordinal;
         Direction direction = directionsValues[ordinal];
-        return new MowerState(new Position(mowerState.position().x(), mowerState.position().y()), direction);
+        //return new MowerState(new Position(mowerState.position().x(), mowerState.position().y()), direction);
+        return new MowerState(mowerState.position(), direction);
     }
 
     private MowerState tryToForward(MowerState currentPosition, Program program, List<MowerState> newPositions) {

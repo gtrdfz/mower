@@ -8,8 +8,9 @@ public class DirectionTest {
     public void shouldHaveRightOrder() {
 
         Assertions.assertThat(Direction.values())
-                .hasSize(4)
-                .containsExactly(Direction.North, Direction.East, Direction.South, Direction.West);
+                .hasSize(8)
+                .containsExactly(Direction.North, Direction.NorthEast, Direction.East, Direction.SouthEast,
+                        Direction.South, Direction.SouthWest, Direction.West, Direction.NorthWest);
     }
 
 }
